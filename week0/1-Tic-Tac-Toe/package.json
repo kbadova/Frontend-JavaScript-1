@@ -4,6 +4,6 @@
   "description": "Simple tic-tac-toe game",
   "main": "game.js",
   "dependencies": {
-    "sync-prompt": "^0.2.2"
+    "prompt-sync": "^4.1.4"
   }
 }
