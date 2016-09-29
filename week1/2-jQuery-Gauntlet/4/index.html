@@ -3,7 +3,6 @@
 <head>
     <title>Chaining dropdowns</title>
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <div class="container">
@@ -13,7 +12,7 @@
                 <form role="form">
                     <div class="form-group">
                     <label for="course-pick" class="control-label">Course:</label>
-                    <select name = "course-pick" class="form-control">
+                    <select name = "course-pick" class="form-control" id="course-select">
                             <option>Frontend JavaScript</option>
                             <option>Core Java</option>
                             <option>Programming 101</option>
@@ -22,7 +21,7 @@
 
                     <div class="form-group">
                         <label class="control-label">Student:</label>
-                        <select class="form-control">
+                        <select class="form-control" id="select-option">
                             <option>Should be populated from the server</option>
                         </select>
                     </div>
@@ -39,5 +38,7 @@
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
