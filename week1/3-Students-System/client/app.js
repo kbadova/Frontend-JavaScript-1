@@ -37,4 +37,19 @@ $(document).ready(function() {
       })
     });
   });
+
+  $("#search-btn").on("click", function() {
+    $('#students-table').find('td').css({"color":"black"})
+    var searched = $("#search-box").val().toLowerCase();
+    if (searched != ""){
+      $('#students-table').find('td').filter(function(item){
+        if ($(this).text().toLowerCase().includes(searched)){
+            console.log("dsfsd");
+            $(this).css({"color":"green"});
+        }
+      });
+    } else {
+      $(this).append('<p>You have not entered a search value</p>');
+    }
+  });
 });
